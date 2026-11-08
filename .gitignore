@@ -1,3 +1,5 @@
 node_modules
 .env
 .env.examples
+.env.development
+.env.production

@@ -5,7 +5,7 @@ export const CUR = '৳';
 export const fmt = (n) => `${CUR}${Number(n || 0).toFixed(2)}`;
 export const CATS = ['Furniture', 'Books', 'Electronics', 'Kitchen', 'Bedding', 'Clothing', 'Other'];
 
-const base = (import.meta.env.VITE_API_URL || 'http://localhost:5000') + '/api';
+const base = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '') + '/api';
 
 // Works logged-in or logged-out (token is only sent if there is one)
 export async function api(path, method = 'GET', body) {
