@@ -3,3 +3,5 @@ node_modules
 .env.examples
 .env.development
 .env.production
+.vercel
+.env*
